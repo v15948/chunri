@@ -1,0 +1,213 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	</head>
+<table border="0" cellpadding="1" cellspacing="1" style="width:350px">
+	<tbody>
+		<tr>
+			<td style="text-align:center;width:100px"><input name="1-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent11()"/></td>
+			<td style="text-align:center;width:100px"><p id="11"><span style="font-size:46px">雞</span></p></td>
+			<td style="text-align:center;width:100px"><input name="1+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent12()"/></td>
+			<td style="text-align:right;width:50px"><p id="changeText1"><span style="font-size:36px">0</span></p></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><input name="2-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent21()"/></td>
+			<td style="text-align:center"><p id="22"><span style="font-size:46px">豬</span></p></td>
+			<td style="text-align:center"><input name="2+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent22()"/></td>
+			<td style="text-align:right"><p id="changeText2"><span style="font-size:36px">0</span></p></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><input name="3-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent31()"/></td>
+			<td style="text-align:center"><p id="33"><span style="font-size:46px">牛</span></p></td>
+			<td style="text-align:center"><input name="3+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent32()"/></td>
+			<td style="text-align:right"><p id="changeText3"><span style="font-size:36px">0</span></p></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><input name="4-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent41()"/></td>
+			<td style="text-align:center"><p id="44"><span style="font-size:46px">海陸</span></p></td>
+			<td style="text-align:center"><input name="4+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent42()"/></td>
+			<td style="text-align:right"><p id="changeText4"><span style="font-size:36px">0</span></p></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><input name="5-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent51()"/></td>
+			<td style="text-align:center"><p id="55"><span style="font-size:46px">塔可</span></p></td>
+			<td style="text-align:center"><input name="5+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent52()"/></td>
+			<td style="text-align:right"><p id="changeText5"><span style="font-size:36px">0</span></p></td>
+		</tr>
+		<tr>
+			<td style="text-align:center"><input name="6-" type="button" value="-" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent61()"/></td>
+			<td style="text-align:center"><p id="66"><span style="font-size:46px">2號</span></p></td>
+			<td style="text-align:center"><input name="6+" type="button" value="+" style="width:50px;height:40px;font-size:30px;color:blue" onclick="showButtonEvent62()"/></td>
+			<td style="text-align:right"><p id="changeText6"><span style="font-size:36px">0</span></p></td>
+		</tr>
+	</tbody>
+	<script>
+		function showButtonEvent11()
+		{
+			var content = document.getElementById("changeText1");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText1").textContent=Number(content.textContent)-1	
+			}
+		}
+		function showButtonEvent12()
+		{
+			var content = document.getElementById("changeText1");
+			content.style.fontSize='36px'
+			document.getElementById("changeText1").textContent=Number(content.textContent)+1;
+		}
+		function showButtonEvent21()
+		{
+			var content = document.getElementById("changeText2");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText2").textContent=Number(content.textContent)-1;
+			}
+		}
+		function showButtonEvent22()
+		{
+			var content = document.getElementById("changeText2");
+			content.style.fontSize='36px'
+			document.getElementById("changeText2").textContent=Number(content.textContent)+1;
+		}
+		function showButtonEvent31()
+		{
+			var content = document.getElementById("changeText3");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText3").textContent=Number(content.textContent)-1;
+			}
+		}
+		function showButtonEvent32()
+		{
+			var content = document.getElementById("changeText3");
+			content.style.fontSize='36px'
+			document.getElementById("changeText3").textContent=Number(content.textContent)+1;
+		}
+		function showButtonEvent41()
+		{
+			var content = document.getElementById("changeText4");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText4").textContent=Number(content.textContent)-1;
+			}
+		}
+		function showButtonEvent42()
+		{
+			var content = document.getElementById("changeText4");
+			content.style.fontSize='36px'
+			document.getElementById("changeText4").textContent=Number(content.textContent)+1;
+		}
+		function showButtonEvent51()
+		{
+			var content = document.getElementById("changeText5");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText5").textContent=Number(content.textContent)-1;
+			}
+		}
+		function showButtonEvent52()
+		{
+			var content = document.getElementById("changeText5");
+			content.style.fontSize='36px'
+			document.getElementById("changeText5").textContent=Number(content.textContent)+1;
+		}
+		function showButtonEvent61()
+		{
+			var content = document.getElementById("changeText6");
+			if (Number(content.textContent) > 0)
+			{
+				content.style.fontSize='36px'
+				document.getElementById("changeText6").textContent=Number(content.textContent)-1;
+			}
+		}
+		function showButtonEvent62()
+		{
+			var content = document.getElementById("changeText6");
+			content.style.fontSize='36px'
+			document.getElementById("changeText6").textContent=Number(content.textContent)+1;
+		}
+	</script>
+</table> 
+
+<br><br>
+<body>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button id="sendBtn" style="font-size:30px">送出</button>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <input id="appUrl" value="https://script.google.com/macros/s/AKfycbzF19nOmlKtZ0kEGTOe5PJIIbRLfu_upDkji6t_rjyMzAt50nDgQPxNkxtP3phj7Nv7/exec"><br/> 
+  <input id="sheetsUrl" value="https://docs.google.com/spreadsheets/d/1fVeHpKfCNMZVBRsMSIGPwkLi2WhDb5QRl-9VL7nWtQk/edit#gid=0"><br/> 
+  <input id="sheetName" value="工作表1"><br/> 
+  <br/> 
+  
+  
+  <script>
+  var content1 = document.getElementById("changeText1");
+  var content2 = document.getElementById("changeText2");
+  var content3 = document.getElementById("changeText3");
+  var content4 = document.getElementById("changeText4");
+  var content5 = document.getElementById("changeText5");
+  var content6 = document.getElementById("changeText6");
+  var appUrl = $('#appUrl'),
+    sheetsUrl = $('#sheetsUrl'),
+    sheetName = $('#sheetName'),
+    sendBtn = $('#sendBtn'),
+    show = $('#show');
+  var data = [['1','2','3','4','5','6']];
+  var parameter = {};
+
+  sendBtn.on('click', function() {
+	if( (content1.textContent > 0) || 
+		(content2.textContent > 0) || 
+		(content3.textContent > 0) || 
+		(content4.textContent > 0) ||
+		(content5.textContent > 0) ||
+		(content6.textContent > 0))
+	{
+		const audio = document.createElement("audio");
+		audio.src = "y1311.mp3";
+		audio.play();
+		
+		data[0][0]=content1.textContent;
+		data[0][1]=content2.textContent;
+		data[0][2]=content3.textContent;
+		data[0][3]=content4.textContent;
+		data[0][4]=content5.textContent;
+		data[0][5]=content6.textContent;
+		
+		document.getElementById("changeText1").style.fontSize='36px';
+		document.getElementById("changeText1").textContent=0;
+		document.getElementById("changeText2").style.fontSize='36px';
+		document.getElementById("changeText2").textContent=0;
+		document.getElementById("changeText3").style.fontSize='36px';
+		document.getElementById("changeText3").textContent=0;
+		document.getElementById("changeText4").style.fontSize='36px';
+		document.getElementById("changeText4").textContent=0;
+		document.getElementById("changeText5").style.fontSize='36px';
+		document.getElementById("changeText5").textContent=0;
+		document.getElementById("changeText6").style.fontSize='36px';
+		document.getElementById("changeText6").textContent=0;
+		
+		parameter = {
+		  url: sheetsUrl.val(),
+		  name: sheetName.val(),
+		  data: data.toString(),
+		  row: data.length,
+		  column: data[0].length
+		};
+		$.get(appUrl.val(), parameter);
+	}
+  });
+  </script>
+</body> 
+
+</html>
